@@ -6,7 +6,7 @@
               <field name="inherit_id" ref="account_budget.crossovered_budget_view_form"/>
               <field name="arch" type="xml">
                 <xpath expr="//notebook[1]/page[1]/field[@name='crossovered_budget_line']//field[@name='practical_amount']" position="after">
-                    <field name="variacion_presupuesto"/>
+                    <field name="variacion_presupuesto" sum="variacion_presupuesto"/>
                 </xpath>
               </field>
       </record>
