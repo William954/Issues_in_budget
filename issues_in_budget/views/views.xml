@@ -1,0 +1,14 @@
+<odoo>
+  <data>
+      <record id="inherit_field_budget" model="ir.ui.view">
+              <field name="name">inherit.field.budget</field>
+              <field name="model">crossovered.budget</field>
+              <field name="inherit_id" ref="account_budget.crossovered_budget_view_form"/>
+              <field name="arch" type="xml">
+                <xpath expr="//notebook[1]/page[1]/tree[1]//[@name='practical_amount']" position="after">
+                    <field name="variacion_presupuesto"/>
+                </xpath>
+              </field>
+      </record>
+  </data>
+</odoo>
