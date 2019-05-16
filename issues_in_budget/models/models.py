@@ -5,7 +5,7 @@ from odoo.exceptions import AccessError, UserError, RedirectWarning, ValidationE
 from datetime import datetime, date, time
 
 class TablaPresupuesto(models.Model):
-    _inherit = "crossovered.budget.line"
+    _inherit = "crossovered.budget"
 
     variacion_presupuesto = fields.Integer(string="Variación vs Presupuesto",compute="variation")
 
