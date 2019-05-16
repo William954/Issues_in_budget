@@ -7,7 +7,7 @@ from datetime import datetime, date, time
 class TablaPresupuesto(models.Model):
     _inherit = "crossovered.budget.lines"
 
-    variacion_presupuesto = fields.Integer(string="Variación vs Presupuesto",compute="variation")
+    variacion_presupuesto = fields.Monetary(string="Variación vs Presupuesto",compute="variation")
 
     @api.one
     @api.depends("planned_amount","practical_amount")

@@ -5,7 +5,7 @@
               <field name="model">crossovered.budget</field>
               <field name="inherit_id" ref="account_budget.crossovered_budget_view_form"/>
               <field name="arch" type="xml">
-                <xpath expr="//notebook[1]/page[1]/tree[1]//[@name='practical_amount']" position="after">
+                <xpath expr="//notebook[1]/page[1]/field[@name='crossovered_budget_line']//field[@name='practical_amount']" position="after">
                     <field name="variacion_presupuesto"/>
                 </xpath>
               </field>
